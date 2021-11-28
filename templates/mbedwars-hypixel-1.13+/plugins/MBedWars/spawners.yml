@@ -1,0 +1,44 @@
+iron:
+  name: '&7%Spawner_Iron%'
+  icon: iron_ingot
+  dropping-materials:
+  - iron_ingot
+  spawn-delay: 1.5
+  spawn-radius: 0
+  tranquil: false
+  merging: false
+  max-nearby-items: 40
+gold:
+  name: '&6%Spawner_Gold%'
+  icon: gold_ingot
+  dropping-materials:
+  - gold_ingot
+  spawn-delay: 6.0
+  spawn-radius: 0
+  tranquil: false
+  merging: false
+  max-nearby-items: 8
+diamond:
+  name: '&bDiamond'
+  icon: diamond
+  dropping-materials:
+  - diamond
+  hologram: diamond_block
+  spawn-delay: 30.0
+  spawn-effect: MOBSPAWNER_FLAMES
+  spawn-radius: 0
+  tranquil: true
+  merging: true
+  max-nearby-items: 4
+emerald:
+  name: '&aEmerald'
+  icon: emerald
+  dropping-materials:
+  - emerald
+  hologram: emerald_block
+  spawn-delay: 50.0
+  spawn-effect: MOBSPAWNER_FLAMES
+  spawn-radius: 0
+  tranquil: true
+  merging: true
+  max-nearby-items: 4

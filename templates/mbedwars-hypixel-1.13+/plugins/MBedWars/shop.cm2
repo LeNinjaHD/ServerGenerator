@@ -1,0 +1,871 @@
+# Wiki Page: http://mbedwars.marcely.de/index.php/Config_shop
+# #### IMPORTANT #### #
+# Names surrounded with % will be taken from the messages file.
+# Make sure when creating something new to remove the %!
+# ################### #
+
+# Change the design of the shop here
+# You are able to choose between:
+#  0 - Normal
+#  1 - HyPixel
+#  2 - HiveMC
+#  3 - GommeHD
+#  4 - Rewinside
+#  5 - Minesucht
+#  6 - BergwerkLABS
+#  7 - HyPixelV2
+design: HyPixelV2
+
+# Configurate the pages, items, products and prices here
+pages {
+	Blocks {
+		icon: white_wool
+		items {
+
+		Wool {
+    	icon: white_wool
+    	caps-multiply: 64
+
+    	products {
+        item {
+          material: white_wool
+          amount: 16
+        }
+      }
+      prices {
+         {
+          spawner: iron
+          amount: 4
+         }
+     	 }
+		 }
+
+		 Clay {
+			 icon: white_terracotta
+			 caps-multiply: 32
+
+			 products {
+				 item {
+					 material: white_terracotta
+					 amount: 12
+				 }
+			 }
+			 prices {
+					{
+					 spawner: iron
+					 amount: 16
+				 }
+			 }
+		 }
+
+		 Wood {
+			 icon: wood
+			 caps-multiply: 64
+
+			 products {
+				 item {
+					 material: wood
+					 amount: 16
+				 }
+			 }
+			 prices {
+					{
+					 spawner: gold
+					 amount: 4
+					}
+				}
+			}
+
+			Endstone {
+				icon: end_stone
+				caps-multiply: 6
+
+				products {
+					item {
+						material: end_stone
+						amount: 12
+					}
+				}
+				prices {
+					 {
+						spawner: iron
+						amount: 24
+					}
+				}
+			}
+
+			Glass {
+				icon: glass
+				caps-multiply: 64
+
+				products {
+					item {
+						material: white_stained_glass
+						amount: 4
+					}
+				}
+				prices {
+					 {
+						spawner: iron
+						amount: 12
+					 }
+				 }
+			 }
+			Ladder {
+				icon: ladder
+				caps-multiply: 3
+
+				products {
+					item {
+						material: ladder
+						amount: 16
+					}
+				}
+				prices {
+					 {
+						spawner: iron
+						amount: 4
+					}
+				}
+			}
+			Obsidian {
+				icon: obsidian
+				caps-multiply: 64
+
+				products {
+					item {
+						material: obsidian
+						amount: 4
+					}
+				}
+				prices {
+					 {
+						spawner: emerald
+						amount: 4
+					 }
+				 }
+			 }
+		}
+
+
+	}
+	%Shop_Page_Sword% {
+		icon: golden_sword
+
+		items {
+
+		{
+		 icon: stone
+		 keep-on-death: true
+		 buy-group: sword 0
+
+		 products {
+			 item {
+				 material: wooden_sword
+				 auto-wear: true
+				 unbreakable: true
+			 }
+		 }
+	 }
+			Stone Sword {
+				icon: stone_sword
+
+				products {
+					item {
+						material: stone_sword
+						auto-wear: true
+						unbreakable: true
+						}
+				      }
+				prices {
+					 {
+						spawner: iron
+						amount: 10
+					}
+				}
+			}
+
+			Iron Sword {
+				icon: iron_sword
+
+				products {
+					item {
+						material: iron_sword
+						auto-wear: true
+						unbreakable: true
+						}
+
+				      }
+				prices {
+					 {
+						spawner: gold
+						amount: 7
+					}
+				}
+			}
+
+			Diamond Sword {
+				icon: diamond_sword
+				products {
+					item {
+						material: diamond_sword
+						auto-wear: true
+						unbreakable: true
+						}
+				      }
+				prices {
+					 {
+						spawner: emerald
+						amount: 4
+					}
+				}
+			}
+
+			Knockback Stick {
+				icon: stick
+				icon-enchantment: KNOCKBACK:2
+
+				products {
+					item {
+						material: stick
+						enchantment: KNOCKBACK:2
+					}
+				}
+				prices {
+					 {
+						spawner: gold
+						amount: 5
+					}
+				}
+			}
+
+		}
+
+	}
+
+	Armor {
+		icon: iron_chestplate
+
+
+		items {
+		 {
+			icon: stone
+			keep-on-death: true
+			buy-group: armor 0
+
+			products {
+				item {
+					material: leather_leggings
+					auto-wear: true
+					unbreakable: true
+				}
+				item {
+					material: leather_boots
+					auto-wear: true
+					unbreakable: true
+				}
+				item {
+					material: leather_chestplate
+					auto-wear: true
+					unbreakable: true
+				}
+				item {
+					material: leather_helmet
+					auto-wear: true
+					unbreakable: true
+				}
+			}
+		}
+
+		Chainmail Armor {
+			icon: chainmail_boots
+			keep-on-death: true
+			buy-group: armor 1
+
+			products {
+				item {
+					material: chainmail_leggings
+					auto-wear: true
+					unbreakable: true
+				}
+				item {
+					material: chainmail_boots
+					auto-wear: true
+					unbreakable: true
+				}
+				item {
+					material: leather_chestplate
+					auto-wear: true
+					unbreakable: true
+				}
+				item {
+					material: leather_helmet
+					auto-wear: true
+					unbreakable: true
+				}
+			}
+			prices {
+				 {
+					spawner: iron
+					amount: 40
+				}
+			}
+		}
+
+		Iron Armor {
+			icon: iron_boots
+			keep-on-death: true
+			buy-group: armor 2
+
+			products {
+				item {
+					material: iron_boots
+					auto-wear: true
+					unbreakable: true
+				}
+				item {
+					material: iron_leggings
+					auto-wear: true
+					unbreakable: true
+				}
+				item {
+					material: leather_chestplate
+					auto-wear: true
+					unbreakable: true
+				}
+				item {
+					material: leather_helmet
+					auto-wear: true
+					unbreakable: true
+				}
+			}
+			prices {
+				 {
+					spawner: gold
+					amount: 12
+				}
+			}
+		}
+
+		Diamond Armor {
+			icon: diamond_boots
+			keep-on-death: true
+			buy-group: armor 3
+
+			products {
+				item {
+					material: diamond_leggings
+					auto-wear: true
+					unbreakable: true
+				}
+				item {
+					material: diamond_boots
+					auto-wear: true
+					unbreakable: true
+				}
+				item {
+					material: leather_chestplate
+					auto-wear: true
+					unbreakable: true
+				}
+				item {
+					material: leather_helmet
+					auto-wear: true
+					unbreakable: true
+				}
+			}
+			prices {
+				 {
+					spawner: emerald
+					amount: 6
+				}
+			}
+		}
+		}
+	}
+
+	%Shop_Page_Pickaxe% {
+		icon: iron_pickaxe
+
+		items {
+
+				Pickaxe &7TIER 1 {
+						icon: wooden_pickaxe
+						keep-on-death: true
+
+						products {
+								item {
+										material: wooden_pickaxe
+										unbreakable: true
+										amount: 1
+								}
+						}
+						prices {
+								 {
+										spawner: iron
+										amount: 10
+								}
+						}
+				}
+
+				Pickaxe &7TIER 2 {
+						icon: iron_pickaxe
+						keep-on-death: true
+
+						products {
+								item {
+										material: iron_pickaxe
+										unbreakable: true
+										amount: 1
+								}
+							}
+						prices {
+								 {
+										spawner: iron
+										amount: 20
+								}
+						}
+				}
+
+				Pickaxe &7TIER 3 {
+						icon: golden_pickaxe
+						keep-on-death: true
+
+						products {
+								item {
+										material: golden_pickaxe
+										unbreakable: true
+										amount: 1
+								}
+						}
+						prices {
+								 {
+										spawner: gold
+										amount: 6
+								}
+						}
+				}
+
+				Pickaxe &7TIER 4 {
+						icon: diamond_pickaxe
+						keep-on-death: true
+
+						products {
+								item {
+										material: diamond_pickaxe
+										unbreakable: true
+										amount: 1
+								}
+						}
+						prices {
+								 {
+										spawner: gold
+										amount: 12
+								}
+						}
+				}
+
+			 Wooden Axe &7TIER 1 {
+				icon: wooden_axe
+				keep-on-death: true
+				force-slot: 28
+
+				products {
+					item {
+						material: wooden_axe
+						unbreakable: true
+					}
+				}
+				prices {
+					 {
+						spawner: iron
+						amount: 10
+					}
+				}
+			}
+
+			Stone Axe &7TIER 2 {
+				icon: stone_axe
+				keep-on-death: false
+				force-slot: 29
+
+				products {
+					item {
+						material: stone_axe
+						unbreakable: true
+					}
+				}
+				prices {
+					 {
+						spawner: iron
+						amount: 20
+					}
+				}
+			}
+
+			Iron Axe &7TIER 3 {
+				icon: iron_axe
+				keep-on-death: false
+				force-slot: 30
+
+				products {
+					item {
+						material: iron_axe
+						unbreakable: false
+					}
+				}
+				prices {
+					 {
+						spawner: gold
+						amount: 6
+					}
+				}
+			}
+
+			Diamond Axe &7TIER 4 {
+				icon: diamond_axe
+				keep-on-death: false
+				force-slot: 31
+
+				products {
+					item {
+						material: diamond_axe
+						unbreakable: true
+					}
+				}
+				prices {
+					 {
+						spawner: gold
+						amount: 12
+					}
+				}
+			}
+
+			Shears {
+				icon: shears
+				force-slot: 37
+				keep-on-death: true
+				one-time-purchase: true
+
+				products {
+					item {
+						material: shears
+						unbreakable: true
+					}
+				}
+				prices {
+					 {
+						spawner: iron
+						amount: 20
+					}
+				}
+			}
+		}
+	}
+
+	Bow {
+		icon: bow
+		items {
+
+			%Shop_Item_Arrow% {
+				icon: arrow
+				caps-multiply: 3
+
+				products {
+					item {
+						material: arrow
+						amount: 8
+						}
+					}
+					prices {
+						{
+							spawner: gold
+							amount: 2
+							}
+						}
+					}
+
+			Bow {
+				icon: bow
+
+				products {
+					item {
+						material: bow
+						unbreakable: true
+					}
+				}
+				prices {
+					 {
+						spawner: gold
+						amount: 12
+					}
+				}
+			}
+
+			Power Bow {
+				icon: bow
+				icon-enchantment: POWER:1
+
+				products {
+					item {
+						material: bow
+						enchantment: POWER:1
+						unbreakable: true
+					}
+				}
+				prices {
+					 {
+						spawner: gold
+						amount: 24
+					}
+				}
+			}
+			Punch Bow {
+				icon: bow
+				icon-enchantment: PUNCH:1
+				icon-enchantment: POWER:1
+
+				products {
+					item {
+						material: bow
+						enchantment: PUNCH:1
+						enchantment: POWER:1
+						unbreakable: true
+					}
+				}
+				prices {
+					 {
+						spawner: emerald
+						amount: 6
+					}
+				}
+			}
+
+		}
+
+	}
+
+	%Shop_Page_Potion% {
+		icon: potion:water
+		items {
+			Potion of Swiftness {
+				icon: potion:speed:900:2
+
+				products {
+					item {
+						material: potion:speed:900:2
+					}
+				}
+				prices {
+					 {
+						spawner: emerald
+						amount: 1
+					}
+				}
+			}
+
+			Jump Boost {
+				icon: potion:jump:900:4
+
+				products {
+					item {
+						material: potion:jump:900:4
+					}
+				}
+				prices {
+					 {
+						spawner: emerald
+						amount: 1
+					}
+				}
+			}
+
+			Invisibility {
+				icon: potion:invisibility:600:1
+
+				products {
+					item {
+						material: potion:invisibility:600:1
+					}
+				}
+				prices {
+					 {
+						spawner: emerald
+						amount: 2
+					}
+				}
+			}
+		}
+	}
+	%Shop_Page_Special% {
+		icon: TNT
+
+
+		items {
+
+		%Shop_Item_GoldenApple% {
+			icon: golden_apple
+
+			products {
+				item {
+					material: golden_apple
+				}
+			}
+			prices {
+				 {
+					spawner: gold
+					amount: 3
+				}
+			}
+		}
+
+		%Shop_Item_Snowball% {
+			icon: snowball
+
+			products {
+				item {
+					material: snowball
+					amount: 4
+				}
+			}
+			prices {
+				 {
+					spawner: iron
+					amount: 4
+				}
+			}
+		}
+
+		Iron Golem {
+			icon: wolf_spawn_egg
+
+			products {
+				special {
+					material: wolf_spawn_egg
+					type: GuardDog
+				}
+			}
+			prices {
+				 {
+					spawner: iron
+					amount: 120
+				}
+			}
+		}
+
+		%Shop_Item_Fireball% {
+			icon: fire_charge
+
+			products {
+				special {
+					material: fire_charge
+					type: fireball
+				}
+			}
+			prices {
+				 {
+					spawner: iron
+					amount: 40
+				}
+			}
+		}
+
+		%Shop_Item_TNT% {
+			icon: tnt
+
+			products {
+				item {
+					material: tnt
+				}
+			}
+			prices {
+				 {
+					spawner: gold
+					amount: 8
+				}
+			}
+		}
+
+		%Shop_Item_Enderpearl% {
+			icon: ender_pearl
+
+			products {
+				item {
+					material: ender_pearl
+				}
+			}
+			prices {
+				 {
+					spawner: emerald
+					amount: 4
+				}
+			}
+		}
+
+		Water Bucket {
+			icon: water_bucket
+
+			products {
+				item {
+					material: water_bucket
+				}
+			}
+			prices {
+				 {
+					spawner: gold
+					amount: 3
+				}
+			}
+		}
+			%Shop_Item_Bridge% {
+				icon: egg
+				caps-multiply: 2
+
+				products {
+					special {
+						material: egg
+						type: bridge
+					}
+				}
+				prices {
+					 {
+						spawner: emerald
+						amount: 1
+					}
+				}
+			}
+			PopUpTower {
+				icon: chest
+
+				products {
+					special {
+						material: chest
+						type: tower
+					}
+				}
+				prices {
+					 {
+						spawner: iron
+						amount: 24
+					}
+				}
+			}
+			%Shop_Item_Tracker% {
+				icon: compass
+
+				products {
+					special {
+						material: compass
+						type: tracker
+					}
+				}
+				prices {
+					 {
+						spawner: emerald
+						amount: 1
+					}
+				}
+			}
+		}
+	}
+}

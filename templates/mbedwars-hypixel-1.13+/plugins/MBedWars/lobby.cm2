@@ -1,0 +1,26 @@
+# Wiki Page: http://mbedwars.marcely.de/index.php/Config_lobby
+# #### IMPORTANT #### #
+# Names surrounded with % will be taken from the messages file.
+# Make sure when creating something new to remove the %!
+# ################### #
+
+%Lobby_Item_Achievements% {
+	material: nether_star
+	slot: 4
+	special: Achievements
+}
+%Lobby_Item_SelectTeam% {
+	material: wool
+	slot: 0
+	special: SelectTeam
+}
+%Lobby_Item_ForceStart% {
+	material: clock
+	slot: 2
+	special: ForceStart
+}
+%Lobby_Item_Leave% {
+	material: BED
+	slot: 8
+	special: Leave
+}

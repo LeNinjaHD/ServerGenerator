@@ -1,0 +1,17 @@
+# Wiki Page: http://mbedwars.marcely.de/index.php/Config_shop
+# #### IMPORTANT #### #
+# Names surrounded with % will be taken from the messages file.
+# Make sure when creating something new to remove the %!
+# ################### #
+# Variables: {player}, {rank}, {kd}, {wl}, {wins}, {loses}, {kills}, {deaths}, {bedsdestroyed}, {roundsplayed}, {playtime}, {uuid}, {world}
+&3&lPersonal &b&lStats
+
+&6%Stat_Default_Rank%: &e{rank}
+&6%Stat_Default_Won%: &e{wins}
+&6%Stat_Default_Lost%: &e{loses}
+&6%Stat_Default_WL%: &e{wl}
+&6%Stat_Default_Kills%: &e{kills}
+&6%Stat_Default_Deaths%: &e{deaths}
+&6%Stat_Default_KD%: &e{kd}
+&6%Stat_Default_BedsDestroyed%: &e{bedsdestroyed}
+&6%Stat_Default_PlayTime%: &e{playtime}
