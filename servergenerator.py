@@ -8,7 +8,7 @@ def cls():
     os.system('cls' if os.name=='nt' else 'clear')
 cls()
 
-print("ServerGenerator v1.0 made by LeNinjaHD")
+print("ServerGenerator v1.1 made by LeNinjaHD")
 print("")
 
 print("Welcome! Select a action:")
