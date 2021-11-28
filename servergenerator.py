@@ -2,7 +2,7 @@ import urllib.request
 import os
 import time
 from distutils.dir_util import copy_tree
-import shutil
+import platform
 
 def cls():
     os.system('cls' if os.name=='nt' else 'clear')
@@ -123,8 +123,17 @@ match selection:
         print("")
 
         print("Creating Start Script...")
-        startscript = "screen -S {} java -Xmx{}G -Xms{}G -jar paper.jar -nogui".format(name, ram, ram)
-        f = open("server/start.sh", "w")
+        match platform.system():
+            case "Linux":
+                startscript = "screen -S {} java -Xmx{}G -Xms{}G -jar paper.jar -nogui".format(name, ram, ram)
+                f = open("server/start.sh", "w")
+            case "Windows":
+                startscript = "java -Xmx{}G -Xms{}G -jar paper.jar -nogui".format(name, ram, ram)
+                f = open("server/start.bat", "w")
+            case "Darwin":
+                print("Mac is not supported yet!")
+                cls()
+                quit()
         f.write(startscript)
         f.close()
         print("Created!")
