@@ -50,8 +50,17 @@ match selection:
         print("")
 
         print("Creating Start Script...")
-        startscript = "screen -S {} java -Xmx{}G -Xms{}G -jar paper.jar -nogui".format(name, ram, ram)
-        f = open("server/start.sh", "w")
+        match platform.system():
+            case "Linux":
+                startscript = "screen -S {} java -Xmx{}G -Xms{}G -jar paper.jar -nogui".format(name, ram, ram)
+                f = open("server/start.sh", "w")
+            case "Windows":
+                startscript = "java -Xmx{}G -Xms{}G -jar paper.jar -nogui".format(name, ram, ram)
+                f = open("server/start.bat", "w")
+            case "Darwin":
+                print("Mac is not supported yet!")
+                cls()
+                quit()
         f.write(startscript)
         f.close()
         print("Created!")
@@ -77,7 +86,6 @@ match selection:
         print("Successfully installed the Template.")
 
         time.sleep(1)
-        cls()
         quit()
     case "3":
         for f in os.listdir("server/"):
@@ -151,5 +159,4 @@ match selection:
         urllib.request.urlretrieve(file, "./server/paper.jar")
         print("Done! Your server is in the server/ Directory")
         time.sleep(1)
-        cls()
         quit()
